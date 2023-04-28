@@ -35,4 +35,4 @@
         key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
       with_items:
         - "root"
-        - jr
+        #- jr
