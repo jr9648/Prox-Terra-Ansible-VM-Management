@@ -5,28 +5,28 @@ vm_config:
   memory: 1024
   cores: 1
   disk_size: "40G"
-  disk_storage: "local-lvm"
+  disk_storage: "local-zfs"
   username: "vm"
   password: "password"
   hagroup: ""
 
 
 pve_nodes:
-  - jayesh
+  - ajaya-alpha
 
 pve_credentials:
-  api_endpoint: "https://192.168.29.29:8006/api2/json"
-  api_token_id: "root@pam!ansibleT"
-  api_secret: "131cad3d-2b50-4b2e-8ba0-3c37caa6a3de"
+  api_endpoint: "https://192.168.1.21:8006/api2/json"
+  api_token_id: "root@pam!terraform"
+  api_secret: "2f398da9-ee3a-4664-8993-27e9f9d0531a"
 
-ssh_public_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDT+ghI2UBlTab9xTeJOI9tMGEeTgukG7sCiofZIJrhliU/gJLbEQNNki7ha2JoFvVgZM8sBcFP6R0YMXZ4GL/c8riERK9/AdwKrlynSLWirUi2/yA1ucAr5c0Lx9KbWtNosa3sNV4m9kfboyF8a5t89aECmbCsW+uwCqDZgpSyr/42q8KcTJaZjRh0MZPsJW+aoUb4zJ9xEmqyP1/Z6qP2KEN3M4+lsmg4E///tL7ATRUkmSUoB3Kg16XRb7YW4YcuSbtZLgNriFj+jAgXQLj0zeKRjQdJuqzpxumsquPhBioheeyyT6X3PdEiewfQ+NkH+FbYlBYSiJCA6Qrssc26weszIFo5I/+5tUStiVBrzVCpczUlR90QB1gDsZPHDGgj3W5xJYRKEWFwjKaUhDMh2pWUOHu2uaeSdODQ1dhp8sncv2BzBOZtKmqXwrOOhUk/vHUcd6Ndpci20PBDpO2E2TPslkyaR1Mi5hoKhc5gWDSzK5HQC0mRliuJ6IiWtqc= jr@controller-vm"
+ssh_public_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDgR+DbPMll+ax1L1oklwfZnNqabHbNlVuCQGZaoDftW9OzgGqMkpq9LxjL+sIg+lA5oSAgx2+YzJ1PDw9PSHzipkVSJe27znC2aPakQyHulab1OlAqRUjJRnH1DdLNNmary6AoLBhbN4nYWKD7arhDivI9NcXUceHKENmo30ueKXpAUpYAOabf7oxDP9+w6Gz0BASKpW92ZuwIZGUmschfp75PTg9Phtoq/widZcE3AmYQ8bXPfrTAvVJc2VaYijp908atAfz6cb4vqpPV+0iLR7PHDJBvDuOmiaMrg+A7S/DCovn6D4TPAENejPXq1HRCaF3f+PtTwJmLFos2B1iZlkR1yofyT26dp/nLOMMDtHM/NWFjH0ui7ihmrQf17Khr20++8PLqoEqmclrUDj1RdoOFsrDJCSt2mgFhxY/FjRc1G3O69Ds9G3UxKIaYbjnsPctf3uc+LKl1hFUZKe9IKWKq/wSEJ5FLSTGWWblsS7LQk5d1WjG/xItGFa3L7Dc= root@AutController"
 ssh_private_key_path: "/home/ubuntu/.sshkey/cloudinit"
 
 gateways:
   - uuid: codevm
     comments: "Customer 1 Inc."
     nodes:
-      - ip_gateway: 192.168.29.1
+      - ip_gateway: 192.168.1.1
         ip_address: 192.168.29.91
         ip_cidr: 24
     dns: 127.0.1.1

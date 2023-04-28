@@ -1,6 +1,5 @@
 - name: deploy gateway vms
   hosts: localhost
-#    - sysmgr
 
   gather_facts: false
   any_errors_fatal: true
