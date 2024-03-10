@@ -1,5 +1,5 @@
 # Purpose
-These Ansible playbooks are designed to manage the initialization and removal of a VM component in the system using Terraform. The playbooks handle the initialization and cleanup tasks related to the terraform, ensuring proper configuration and removal without disrupting the service.
+These Ansible playbooks are designed to manage the initialization and removal of a VM component in an on-prem-hosting environment using proxmox using Terraform. The playbooks handle the initialization and cleanup tasks related to the terraform, ensuring proper configuration and removal without disrupting the service.
 ## Playbook Structure
 The repository contains three main Ansible playbooks:
 
